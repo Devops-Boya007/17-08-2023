@@ -138,10 +138,11 @@ Note: it will be visible only once
 
 create branch
 switch to branch
-files
+Create files
 add
 commit
 push
+Shortcut: CSC-ACP
 
 GIT IGNORE: it will not track the files which we want.
 touch java{1..5}
