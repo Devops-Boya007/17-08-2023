@@ -315,24 +315,7 @@ HISTORY:
 MERGE:
 adding the files blw one branch to another branch
 git merge branch_name
-Process:
-Step1: we have 2 brances now and now I'm in main branch.
-* Master
-  Master-1
-Step:2 Switch to the branch where you want both changes[If you want to merge "Master-1" into "Master", first switch to "Master"]
-cmd: git checkout Master
-Step3:Merge the other branch
-Cmd: git merge Master-1
-Step4. If Git reports a merge conflict
-Cmd: git status
-Note: We have to remove Arrow marks, equal marks and save 
--------------------------------------
-<<<<<<< HEAD
-Code from main branch
-=======
-Code from dev branch
->>>>>>> dev
----------------------------------------
+
 
 REBASE:
 adding the files blw one branch to another branch
@@ -424,6 +407,25 @@ HISTORY:
 MERGE CONFLICT:
 when we try to merege 2 branches with same file and Different content then conflict will raise.
 so we need to reslove the conflict manually
+
+Process:
+Step1: we have 2 brances now and now I'm in main branch.
+* Master
+  Master-1
+Step:2 Switch to the branch where you want both changes[If you want to merge "Master-1" into "Master", first switch to "Master"]
+cmd: git checkout Master
+Step3:Merge the other branch
+Cmd: git merge Master-1
+Step4. If Git reports a merge conflict
+Cmd: git status
+Note: We have to remove Arrow marks, equal marks and save 
+-------------------------------------
+<<<<<<< HEAD
+Code from main branch
+=======
+Code from dev branch
+>>>>>>> dev
+---------------------------------------
 
 
 CHERRY-PICK: 
