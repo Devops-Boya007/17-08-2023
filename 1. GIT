@@ -422,8 +422,7 @@ HISTORY:
 ==================================================================
 
 MERGE CONFLICT:
-when we try to merege 2 branches with same file and Different content
-then conflict will raise.
+when we try to merege 2 branches with same file and Different content then conflict will raise.
 so we need to reslove the conflict manually
 
 
@@ -520,6 +519,17 @@ HISTORY:
   125  git revert branch-1
   126  ll
   127  git clone https://github.com/torvalds/linux.git
+
+Subtopics:
+1.Git Ignore: It will not track the files which we want.
+2.Git Restore:To untrack the tracked file
+3.Merge: Adding the files blw one branch to another branch
+4.Rebase: Adding the files blw one branch to another branch
+5.Stash: To hide the files which are not comitted.
+6.Merge Conflict: When we try to merege 2 branches with same file and Different content then conflict will raise.
+7.Cherry-Pick: We can merge only specific files from one branch to another
+8.Show: To show the commits for a file
+9. Revert: To undo the merging
 
 INTERVIEW QUESTIONS:
 what is git & why to use ?
