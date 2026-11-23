@@ -48,6 +48,36 @@ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
 #STEP-3: DOWNLOAD JAVA11 AND JENKINS
 amazon-linux-extras install java-openjdk11 -y
+------------------------------------------
+Importantent:
+-------------
+2. UPDATE LINUX PACKAGES
+sudo dnf update -y
+3.1> INSTALL JAVA 21
+sudo dnf install java-21-amazon-corretto -y
+3.2> CONFIGURE JENKINS REPOSITORY
+Download Jenkins LTS repository file:
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/rpm-stable/jenkins.repo
+
+3.3>Import Jenkins repository signing key:
+sudo rpm --import https://pkg.jenkins.io/rpm-stable/jenkins.io-2026.key
+
+3.4> Update repository metadata:
+sudo dnf upgrade -y
+
+3.5> INSTALL JENKINS
+sudo dnf install jenkins -y
+
+3.6> ENABLE JENKINS SERVICE
+Enable Jenkins to start automatically after server reboot:
+sudo systemctl enable jenkins
+
+3.7> START JENKINS
+sudo systemctl start jenkins
+
+3.8> CHECK JENKINS STATUS
+sudo systemctl status jenkins
+-----------------------------------------
 yum install jenkins -y
 update-alternatives --config java
 
