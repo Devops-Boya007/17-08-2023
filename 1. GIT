@@ -128,7 +128,7 @@ username:
 password:
 
 TOKEN GENERATION: 
-account -- > settings -- >developer settings -- > PAT -- > Classic -- > Generate new token -- > classic -- > name: abcd -- > select 6 options -- > generate 
+User menu -- > settings -- >developer settings -- > Personal access token(Clasic) -- > Generate new token( classic)--> name: abcd -- > select 6 options -- > generate 
 
 Note: it will be visible only once
 
